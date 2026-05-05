@@ -15,7 +15,7 @@
             "language":{
             "search": "Cari:",
             "lengthMenu": "Tampilkan_MENU_data",
-            "info": "Menampilkan_START_sampai_END_dati_TOTAL_data",
+            "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
             "paginate":{
                 "previous":"Sebelumnya",
                 "next": "Berikutnya"
@@ -30,16 +30,18 @@
     var chart= new Chart(ctx,{
         type: 'bar',
         data: {
-            labels:['kategori','Anggota'],
+            labels:['Kategori','Buku', 'Anggota'],
             datasets:[{
                 labels:'Jumlah Data',
                 data:[
-                <?=$total_kategori;?>,
-                <?=$total_anggota;?>
+                <?= $total_kategori; ?>,
+                    <?= $total_buku; ?>,
+                    <?= $total_anggota; ?>
                 ],
                 backgroundColor:[
                     '#f40fce',
-                    '#5d05ea'                
+                    '#5d05ea',
+                    '#7f9381'                
                 ]
             }]
         },

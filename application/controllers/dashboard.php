@@ -12,7 +12,7 @@ public function index()
 {
     $data['total_kategori'] = $this->db->count_all('kategori');
     $data['total_anggota'] = $this->db->count_all('anggota');
-
+    $data['total_buku'] = $this->db->count_all('buku');
     $this->load->view('templates/header');
     $this->load->view('templates/sidebar');
     $this->load->view('templates/topbar');
