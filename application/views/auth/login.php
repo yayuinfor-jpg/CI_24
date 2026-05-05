@@ -46,7 +46,7 @@
                                         <?= $this->session->flashdata('error'); ?>
                                     </div>
                                     <?php endif; ?>
-                                    <form class="user" method="post" action="<?= base_url('auth/login');?>">
+                                    <form class="user" method="post" action="<?= base_url('login/proses');?>">
                                         <div class="form-group">
                                             <input type="text" name="username" class="form-control form-control-user"
                                                 placeholder="Username" required>

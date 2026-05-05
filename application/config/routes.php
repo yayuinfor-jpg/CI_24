@@ -54,5 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['login'] ='auth';
-$route['login/proses'] = 'auth/login';
+$route['login/proses'] = 'index.php/auth/login';
 $route['logout'] = 'auth/logout';
