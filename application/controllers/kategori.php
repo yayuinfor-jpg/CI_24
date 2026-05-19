@@ -7,13 +7,16 @@ class kategori extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Kategori_model');
-        if (!$this->session->userdata('login')){
+
+        if (!$this->session->userdata('login')) {
             redirect('login');
         }
+    } // <-- ini yang kurang
 
     public function index()
     {
         $data['kategori'] = $this->Kategori_model->get_all();
+
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
         $this->load->view('templates/topbar');
@@ -30,9 +33,6 @@ class kategori extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
-    // =====================
-    // SIMPAN
-    // =====================
     public function simpan()
     {
         $data = [
@@ -40,6 +40,7 @@ class kategori extends CI_Controller {
         ];
 
         $this->Kategori_model->insert($data);
-        redirect('index.php/kategori');
+
+        redirect('kategori');
     }
 }

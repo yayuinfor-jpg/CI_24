@@ -10,7 +10,7 @@
 <hr class="sidebar-divider my-0">
 
 <li class="nav-item active">
-    <a class="nav-link" href="<?= site_url('index.php/dashboard') ?>">
+    <a class="nav-link" href="<?= site_url('dashboard') ?>">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span>
     </a>
@@ -19,26 +19,37 @@
 <hr class="sidebar-divider my-0">
 
 <li class="nav-item">
-    <a class="nav-link" href="<?= site_url('index.php/kategori') ?>">
+    <a class="nav-link" href="<?= site_url('kategori') ?>">
         <i class="fas fa-box"></i>
         <span>Kategori</span>
     </a>
 </li>
- 
+ <li class="nav-item">
+    <a class="nav-link" href="<?= site_url('peminjaman') ?>">
+        <i class="fas fa-box"></i>
+        <span>peminjaman</span>
+    </a>
+</li>
 <li class="nav-item">
-    <a class="nav-link" href="<?= site_url('index.php/buku') ?>">
+    <a class="nav-link" href="<?= site_url('buku') ?>">
         <i class="fas fa-box"></i>
         <span>Buku</span>
     </a>
 </li>
 
 <li class="nav-item">
-    <a class="nav-link" href="<?= site_url('index.php/anggota') ?>">
+    <a class="nav-link" href="<?= site_url('anggota') ?>">
         <i class="fas fa-box"></i>
         <span>Anggota</span>
     </a>
 </li>
-
+</li>
+ <li class="nav-item">
+    <a class="nav-link" href="<?= site_url('laporan/peminjaman') ?>">
+        <i class="fas fa-box"></i>
+        <span>laporan peminjaman</span>
+    </a>
+</li>
 
 <hr class="sidebar-divider d-none d-md-block">
 
